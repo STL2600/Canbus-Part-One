@@ -52,23 +52,218 @@
 
 ![](static/canbus-priority.png)
 
-# What we tried to do
-## Go to Junk Yard
-## Grab a Steering Wheel and Instrument Cluster
-## Wire everything up, sniff CAN
+# The Plan!
+
+::: notes
+
+:::
+
+## Step 1: Go to Junk Yard
+
+::: notes
+
+Step 1:
+- We need car parts to car hack
+- We aren't made of money, so new parts weren't an option
+- To the Junk Yard!
+- Figure it'll take about an hour, tops.
+
+:::
+
+## Step 2: Purchase Car Parts
+
+- Steering Wheel with Buttons
+- Instrument Panel
+
+::: notes
+
+- We weren't looking to do anything too elaborate
+- Just want to see some data going across the CAN
+- Prove we can read and write data
+- Steering Wheel would give us some input to observe
+- Instrument panel to write data out to
+
+:::
+
+## Step 3: Wire up, sniff CAN
+
+::: notes
+
+- We take everything home.
+- Build a bench unit to test with
+- Start sniffing CAN signals
+
+:::
+
 ## Success!
 
-# Where we went wrong
-## Go back and get tools
-## Return to Junk Yard
-## Selected a random Chevy Riverside because it looked “newish”
-## Attempt to remove steering wheel
-## Watched Youtube video
-## Removed Steering Wheel
-## Oops… Too many wires.
-## Confusion
-## Attempting to find ECU
-## Failure
+![](static/anakin-padme-meme.jpg)
+
+::: notes
+
+:::
+
+# Here's what actually happened...
+
+::: notes
+
+:::
+
+## Step 1: Go to Junk Yard
+
+![](static/junkyard-location.png)
+
+::: notes
+
+- Went as planned.
+- Decided on PYP in Washington Park
+- Bob and I got there nice an early on the weekend.
+
+:::
+
+## Step 2: No Kids Allowed
+
+![](static/junkyard-hours.png)
+
+::: notes
+
+- Bob brought his son with him.
+- Turns out minors aren't allowed in the junk yard.
+- Which we probably would've known if we had done the tiniest bit of research
+
+:::
+
+## Step 3: Come Back Another Day
+
+::: notes
+
+- So we came back another day.
+- This time we left the children at home.
+
+
+:::
+
+## Step 4: Go back and get tools
+
+::: notes
+
+- Unfortunately we also left our tools at home.
+
+:::
+
+## Step 5: Return to Junk Yard
+
+::: notes
+
+- So, after driving home, grabbing tools, and driving back we are ready to start 
+- after only losing an hour of the estimated hour job.
+
+:::
+
+
+## Step 6: Selected a random Chevy Riverside because it looked “newish”
+
+![](static/chevy-riverside.png)
+
+::: notes
+
+- So, after driving home, grabbing tools, and driving back we are ready to start 
+- after only losing an hour of the estimated hour job.
+
+:::
+
+## Step 7: Attempt to remove steering wheel
+
+![](static/monkey-tools.jpg)
+
+::: notes
+
+- And thus began our shortlived career as mechanics.
+- We were immediately stumped by the lack of screws or bolts
+
+:::
+
+## Step 8: Watched Youtube video
+
+![](static/monkey-watching-tv.jpg)
+
+::: notes
+
+- So, we turned to the internet
+- Found a instructional video for removing this particular steering wheel
+
+:::
+
+## Step 9: Removed Steering Wheel
+
+![](static/ape-cheer.jpg)
+
+::: notes
+
+- And it still took us way too long to remove it, but we did.
+- In this case, there were little release buttons you had to push with a long screwdriver or allen wrench
+
+:::
+
+## Step 10: Oops… Too many wires.
+
+![](static/too-many-wires.png)
+
+::: notes
+
+- So after we finally removed the steering with...
+- We expected 2-4 wires.  Instead there was probabably closer to twenty.
+- That's way too many wires for CAN bus.
+
+:::
+
+## Step K: Confusion
+
+![](static/confused-monkey.jpg)
+
+::: notes
+
+- Okay. So what do these go to?
+- Is there another controller that translates these into CAN?
+- We assumed every thing just spoke to the Car's single computer over can.
+- We are very confused at this point.  Again due to overconfidence and minimal research
+
+:::
+
+## Step L-12: More Googling
+
+![](static/monkey-computer.jpg)
+
+::: notes
+
+- So more googling, and we start looking for other controllers and the ECU
+
+:::
+
+## Step Delta: Attempting to find ECU
+
+![](static/wheres-waldo.jpg)
+
+::: notes
+
+- We try to follow the various wireing harnesses around, but no luck
+- The only think we found was a controller than handled the 4x4 system
+- And being a junkyard, we couldn't even be sure it was there
+
+:::
+
+## Step "Fix TypeError: List Not Integer": Failure
+
+![](static/loser.png)
+
+::: notes
+
+- So we accepted our ignorance and decided to head back and do more research and do more planning
+- Next time we'll decide on a specific vehicle.
+- Check the website and make sure they have it at the junkyard
+- Learn how to remove the parts beforehand. 
+
+:::
 
 # Things talking on the network
 
