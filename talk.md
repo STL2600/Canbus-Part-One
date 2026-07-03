@@ -118,9 +118,17 @@ The computer used to control locking, hvac, and other internal controls.
 
 :::
 
-# LINBUS
+# Local Interconnect Network (LIN)
 
 Great, another thing.
+
+## LIN
+
+ - One wire serial format
+ - Less reliable then CAN
+ - But, cheaper
+ - Max 16 nodes, one master with 15 slaves
+ - Consistent latency
 
 ::: notes
 
@@ -135,10 +143,28 @@ Usually used on a gateway to the CANBUS
 # Inputs
 ## Steering Wheel Controls
 
+::: notes
+
+Sometimes directly connected to the BCM
+
+Sometimes connected to a LINBUS
+
+:::
+
 # Outputs
 ## Instrument Cluster
-## Simulator
-## Live car connection
+
+# Simulator
+
+::: notes
+
+:::
+
+# Live car connection
+
+::: notes
+
+:::
 
 # Game Plan
 ## Go to Defcon and talk to the car hacking village
