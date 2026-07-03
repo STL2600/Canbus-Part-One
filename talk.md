@@ -422,6 +422,16 @@ Where we ended up after the junkyard trip failed - realized we needed to do our 
 
 :::
 
+## ICSim
+
+![](static/icsim-joypad.jpg)
+
+::: notes
+
+It also supports gamepads, which gives us some bad ideas.
+
+:::
+
 # Inputs
 ## Steering Wheel Controls
 
