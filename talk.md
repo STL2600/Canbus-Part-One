@@ -4,6 +4,54 @@
 
 # Rehash protocol info
 
+ - Mostly used for cars
+ - Similar to RS-422 / 485
+
+## High-Speed Bus
+
+![](static/canbus-high-speed.png)
+
+::: notes
+
+ - Each end has 120ohm resistor
+
+:::
+
+## Signaling
+
+ - Signal 1 by driving high and low
+ - Signal 0 by allowing them to equalize
+
+## Low-Speed Bus
+
+![](static/canbus-low-speed.png)
+
+::: notes
+
+ - Total resistence should be 100ohm
+ - More fault tolerant
+
+:::
+
+## Signaling
+
+ - Signal 1 by driving high and low
+ - Signal 0 by inverting 1
+
+## Protocol
+
+ - Wait after message
+ - Message start by driving high
+ - Start with message ID
+
+## Packet Format
+
+![](static/canbus-frame.png)
+
+## Priority
+
+![](static/canbus-priority.png)
+
 # What we tried to do
 ## Go to Junk Yard
 ## Grab a Steering Wheel and Instrument Cluster
@@ -22,11 +70,64 @@
 ## Attempting to find ECU
 ## Failure
 
-# Stuff
-## Things talking on the network
+# Things talking on the network
+
 ## ECU (Electronic Control Unit)
+
+::: notes
+
+The generic term for all the "computers" in the car.
+
+The specific terms and what computers do is dependent on the manufacturer, but there's some generic ones.
+
+:::
+
 ## ECM (Engine Control Module)
+
+![alt text](static/ecm.png)
+
+::: notes
+
+The computer that controls the engine.
+
+:::
+
+## TCM (Transmission Control Unit)
+
+::: notes
+
+The computer that controls the transmission / shifting.
+
+:::
+
 ## BCM (Body Control Module)
+
+![alt text](static/bcm.png)
+
+::: notes
+
+The computer used to control locking, hvac, and other internal controls.
+
+:::
+
+## Radio / In Car Entertainment
+
+::: notes
+
+The computer used to control locking, hvac, and other internal controls.
+
+:::
+
+# LINBUS
+
+Great, another thing.
+
+::: notes
+
+Usually used on a gateway to the CANBUS
+
+:::
+
 ## How to actually play with it
 ## Tools
 ## MCP2515
