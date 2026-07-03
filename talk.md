@@ -62,7 +62,6 @@
 
 ::: notes
 
-Step 1:
 - We need car parts to car hack
 - We aren't made of money, so new parts weren't an option
 - To the Junk Yard!
@@ -349,7 +348,8 @@ Usually used on a gateway to the CANBUS
 
 ::: notes
 
-Where we ended up after the junkyard trip failed - realized we needed to do our homework first, and this is where a lot of that homework lives.
+- Where we ended up after the junkyard trip failed 
+- Realized we needed to do our homework first, and this is where a lot of that homework lives.
 
 :::
 
@@ -518,7 +518,6 @@ It also supports gamepads, which gives us some bad ideas.
 ## Step 2: Pick a car with a BCM
 
 - Early 2000s domestic vehicles
-- 
 
 ::: notes
 
