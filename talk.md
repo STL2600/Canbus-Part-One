@@ -448,7 +448,15 @@ Sometimes connected to a LINBUS
 
 # Simulator
 
+![](static/icsim-2.jpg)
+
 ::: notes
+
+- This is where ICSim comes in.
+- Gives you a dashboard to accept CAN input
+- At the same time, you can monitor the traffic
+- Can also reply captured traffic to help validate your findings
+- It also allows for adjustable levels of simulated background noise to mimic real-world
 
 :::
 
@@ -459,21 +467,75 @@ Sometimes connected to a LINBUS
 :::
 
 # Game Plan
+
 ## Go to Defcon and talk to the car hacking village
+
+![](static/car-hacking-village.png)
+
+::: notes
+
+- Going to get some more hands on research.
+- The Car Hacking Village is a Defcon staple
+- At minimum, get a clue on how to setup a proper test rig
+- And hopefully get some experience talking to CAN
+
+:::
+
 ## Pick a car with a BCM
 ## Research how to take it apart
-## Pull out the
-## BCM
-## Steering Wheel
-## Instrument Cluster
-## Wiring Harness
+
+## Junkyard Shopping List
+
+- BCM
+- Steering Wheel
+- Instrument Cluster
+- Wiring Harness
+
+::: notes
+
+- At this point we figure we need at least these parts
+- As we continue to research, this list could expand
+
+:::
+
 ## Hook up to CAN port on BCM-ECU and power up
+
 ## Snoop on CANBUS
+
+::: notes
+
+- With more knowledge
+- And knowing where to find help
+- And presumably a working test rig
+- We can get back to our original goals
+- And start capturing CANBUS traffic
+- Capturing signals is something we are bit more comfortable with at this point
+- Don't anticipate any problems.
+- Famouse last words.
+
+:::
+
 ## Write to Displays
 
 # Stretch Goals
 ## Game interface
+
+![](static/audie-game-control.png)
+
+::: notes
+
+- Saw a redditor wire up an Audi control panel, including the key, to a driving sim.
+- Thought it would be fun to do something similar, time permitting
+
+:::
+
 ## Remote testing
+
+::: notes
+
+- CANiBUS
+
+:::
 
 --- 
 
