@@ -24,7 +24,7 @@
 
 ## Low-Speed Bus
 
-![](static/canbus-low-speed.png)
+![](static/canbus-low-speed.png){width="55%"}
 
 ::: notes
 
@@ -111,7 +111,7 @@ Step 1:
 
 ## Step 1: Go to Junk Yard
 
-![](static/junkyard-location.png)
+![](static/junkyard-location.png){width="85%"}
 
 ::: notes
 
@@ -163,7 +163,7 @@ Step 1:
 
 ## Step 6: Selected a random Chevy Riverside because it looked “newish”
 
-![](static/chevy-riverside.png)
+![](static/chevy-riverside.png){width="45%"}
 
 ::: notes
 
@@ -207,7 +207,7 @@ Step 1:
 
 ## Step 10: Oops… Too many wires.
 
-![](static/too-many-wires.png)
+![](static/too-many-wires.png){width="45%"}
 
 ::: notes
 
@@ -279,7 +279,7 @@ The specific terms and what computers do is dependent on the manufacturer, but t
 
 ## ECM (Engine Control Module)
 
-![alt text](static/ecm.png)
+![](static/ecm.png)
 
 ::: notes
 
@@ -297,7 +297,7 @@ The computer that controls the transmission / shifting.
 
 ## BCM (Body Control Module)
 
-![alt text](static/bcm.png)
+![](static/bcm.png)
 
 ::: notes
 
@@ -355,7 +355,7 @@ Where we ended up after the junkyard trip failed - realized we needed to do our 
 
 ## THE CAR HACKER'S HANDBOOK
 
-![](static/car-hackers-handbook.png)
+![](static/car-hackers-handbook.png){width="22%"}
 
 - Written by Craig Smith
 - Free online at opengarages.org
@@ -374,7 +374,7 @@ Where we ended up after the junkyard trip failed - realized we needed to do our 
 
 ## MCP2515
 
-![](static/mcp2515.jpg)
+![](static/mcp2515.jpg){width="35%"}
 
 - Cheap SPI CAN controller chip, a few dollars
 - Paired with a transceiver chip (e.g. TJA1050) to actually drive the bus
@@ -407,7 +407,7 @@ Where we ended up after the junkyard trip failed - realized we needed to do our 
 
 ## ICSim
 
-![](static/icsim.jpg)
+![](static/icsim.jpg){width="40%"}
 
 - "Instrument Cluster Simulator"
 - By the author of Car Hacker's Handbook
@@ -470,7 +470,7 @@ Sometimes connected to a LINBUS
 
 ## Go to Defcon and talk to the car hacking village
 
-![](static/car-hacking-village.png)
+![](static/car-hacking-village.png){width="40%"}
 
 ::: notes
 
@@ -520,7 +520,7 @@ Sometimes connected to a LINBUS
 # Stretch Goals
 ## Game interface
 
-![](static/audie-game-control.png)
+![](static/audie-game-control.png){width="30%"}
 
 ::: notes
 
