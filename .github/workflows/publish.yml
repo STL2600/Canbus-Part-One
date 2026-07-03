@@ -29,6 +29,9 @@ jobs:
       - name: Copy Reveal To Dist
         run: cp -r reveal.js dist/
 
+      - name: Copy Custom Theme To Dist
+        run: cp theme/cyberpunk.css dist/reveal.js/dist/theme/cyberpunk.css
+
       - name: Copy Favicon To Dist
         run: cp -r favicon.ico dist/
 
@@ -51,7 +54,7 @@ jobs:
             --slide-level 2
             --standalone
             -t revealjs
-            -V theme=night
+            -V theme=cyberpunk
             -V revealjs-url=reveal.js
             -s dist/talk.md
             -o dist/index.html
