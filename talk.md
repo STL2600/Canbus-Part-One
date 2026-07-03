@@ -332,8 +332,95 @@ Usually used on a gateway to the CANBUS
 :::
 
 ## How to actually play with it
-## Tools
+
+## Tools and Resources
+
+- r/Carhacking
+- The Car Hacker's Handbook
+- MCP2515 Module
+- SocketCAN
+- ICSim
+
+## r/Carhacking
+
+- Like for everything, there's a subreddit
+- Good Wiki to get you started
+- People share DBC files, dumps, and write-ups of specific makes/models
+
+::: notes
+
+Where we ended up after the junkyard trip failed - realized we needed to do our homework first, and this is where a lot of that homework lives.
+
+:::
+
+## THE CAR HACKER'S HANDBOOK
+
+![](static/car-hackers-handbook.png)
+
+- Written by Craig Smith
+- Free online at opengarages.org
+- Also available through No Starch Press
+
+
+::: notes
+
+- Excellent book online.
+- Likely dated in some parts, but so is CAN
+- Actually a pretty quick read for 300 pages
+- Covers CAN basics, OBD-II/UDS diagnostics, ECU reversing, RF/key fobs
+- The de facto starting reference for this whole space
+
+:::
+
 ## MCP2515
+
+![](static/mcp2515.jpg)
+
+- Cheap SPI CAN controller chip, a few dollars
+- Paired with a transceiver chip (e.g. TJA1050) to actually drive the bus
+- Common on Arduino "CAN bus shield" boards
+- Lets a microcontroller speak CAN without needing a full Linux box
+
+::: notes
+
+- Simple SPI to CAN transciever
+- These seemed very popular on r/Carhacking
+- I bought 10 for $20 on eBay
+- This is the easiest/cheapest way to get a device talking CAN if you don't want to go through a USB adapter and SocketCAN.
+
+:::
+
+## SocketCAN
+
+- Linux kernel's native CAN networking stack
+- Treats a CAN bus like a network interface, e.g. can0
+- Standard userspace tools: candump, cansend, cangen, cansniffer
+- Works with cheap USB-CAN adapters, including MCP2515-based ones
+
+::: notes
+
+- There is a CAN network module already in the Linux kernel
+- Once you have a CAN interface setup, all your regular Linux networking tools will work.
+- Like Wireshark
+
+:::
+
+## ICSim
+
+![](static/icsim.jpg)
+
+- "Instrument Cluster Simulator"
+- By the author of Car Hacker's Handbook
+- Open Source
+
+::: notes
+
+- "Instrument Cluster Simulator", open source, also from Craig Smith
+- Fake dashboard + a fake set of steering wheel controls, talking to each other over a virtual CAN bus
+- No real car or hardware required to start practicing
+- Includes a fuzzer for generating traffic, good for practicing sniffing/replay before touching real hardware
+
+:::
 
 # Inputs
 ## Steering Wheel Controls
