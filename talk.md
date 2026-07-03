@@ -493,7 +493,7 @@ It also supports gamepads, which gives us some bad ideas.
 
 # Game Plan
 
-## Go to Defcon and talk to the car hacking village
+## Step 1: Go to Defcon and talk to the car hacking village
 
 ![](static/car-hacking-village.png){width="40%"}
 
@@ -506,10 +506,11 @@ It also supports gamepads, which gives us some bad ideas.
 
 :::
 
-## Pick a car with a BCM
-## Research how to take it apart
+## Step 2: Pick a car with a BCM
 
-## Junkyard Shopping List
+## Step 3: Research how to take it apart
+
+## Step 4: Go Shopping... Again...
 
 - BCM
 - Steering Wheel
@@ -523,9 +524,9 @@ It also supports gamepads, which gives us some bad ideas.
 
 :::
 
-## Hook up to CAN port on BCM-ECU and power up
+## Step 5: Hook up to CAN port on BCM-ECU and power up
 
-## Snoop on CANBUS
+## Step 6: Snoop on CANBUS
 
 ::: notes
 
@@ -540,9 +541,12 @@ It also supports gamepads, which gives us some bad ideas.
 
 :::
 
-## Write to Displays
+## Step 7: Write to Displays
 
 # Stretch Goals
+
+In case things get too easy...
+
 ## Game interface
 
 ![](static/audie-game-control.png){width="30%"}
