@@ -487,7 +487,16 @@ It also supports gamepads, which gives us some bad ideas.
 
 # Live car connection
 
+ - ESP32
+ - ELM327
+ - ODB2 Port Pins 6 & 14
+ 
+ ![alt text](static/odb2-pinout.png)
+
 ::: notes
+
+ - ESP32 - a number of different implementations exist
+ - ELM327 is a dedicated chip for decoding CANBUS
 
 :::
 
@@ -507,6 +516,16 @@ It also supports gamepads, which gives us some bad ideas.
 :::
 
 ## Pick a car with a BCM
+
+- Early 2000s domestic vehicles
+- 
+
+::: notes
+
+ - Later vehicles often have a LIN instead of direct wiring for peripherals
+
+:::
+
 ## Research how to take it apart
 
 ## Junkyard Shopping List
@@ -541,6 +560,14 @@ It also supports gamepads, which gives us some bad ideas.
 :::
 
 ## Write to Displays
+
+::: notes
+
+ - This may require having one of the actual cars
+ - Some of the CAN packets are standard, but some are vendor specific
+ - Being able to send the correct data to the BCM can be difficult
+
+:::
 
 # Stretch Goals
 ## Game interface
