@@ -268,7 +268,7 @@
 
 ## ECU (Electronic Control Unit)
 
-![alt text](static/generic-ecu.png)
+![](static/generic-ecu.png){width="75%"}
 
 ::: notes
 
@@ -300,7 +300,7 @@ The computer used to control locking, hvac, and other internal controls.
 
 ## Radio / In Car Entertainment
 
-![alt text](static/head-unit.png)
+![](static/head-unit.png){width="55%"}
 
 ::: notes
 
@@ -495,7 +495,7 @@ It also supports gamepads, which gives us some bad ideas.
  - ELM327
  - ODB2 Port Pins 6 & 14
  
- ![alt text](static/odb2-pinout.png)
+ ![](static/odb2-pinout.png){width="65%"}
 
 ::: notes
 
