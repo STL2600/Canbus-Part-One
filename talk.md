@@ -268,6 +268,8 @@
 
 ## ECU (Electronic Control Unit)
 
+![alt text](static/generic-ecu.png)
+
 ::: notes
 
 The generic term for all the "computers" in the car.
@@ -286,14 +288,6 @@ The computer that controls the engine.
 
 :::
 
-## TCM (Transmission Control Unit)
-
-::: notes
-
-The computer that controls the transmission / shifting.
-
-:::
-
 ## BCM (Body Control Module)
 
 ![](static/bcm.png)
@@ -306,11 +300,20 @@ The computer used to control locking, hvac, and other internal controls.
 
 ## Radio / In Car Entertainment
 
+![alt text](static/head-unit.png)
+
 ::: notes
 
 The computer used to control locking, hvac, and other internal controls.
 
 :::
+
+## Etc.
+
+ - Transmission Control Module (TCM)
+ - Brake Control Module (BCM)
+ - Drive Control Module (DCM)
+ - and so on and so forth...
 
 # Local Interconnect Network (LIN)
 
@@ -326,7 +329,8 @@ Great, another thing.
 
 ::: notes
 
-Usually used on a gateway to the CANBUS
+ - Quickly
+ - Usually used on a gateway to the CANBUS
 
 :::
 
@@ -517,7 +521,10 @@ It also supports gamepads, which gives us some bad ideas.
 
 ## Step 2: Pick a car with a BCM
 
-- Early 2000s domestic vehicles
+- Early 2010s domestic vehicles
+- Earlier cars may not have full CAN support
+- Later cars may have gateway security
+- Later cars can use LIN instead of direct wiring
 
 ::: notes
 
