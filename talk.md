@@ -433,20 +433,45 @@ It also supports gamepads, which gives us some bad ideas.
 :::
 
 # Inputs
+
 ## Steering Wheel Controls
+
+- Buttons for volume, cruise control, phone, media
+- Every button press becomes a CAN (or LIN) frame
+- By "input", we just means "writes to the bus"
+- Sometimes directly connected to the BCM
+- Sometimes connected to a LIN bus
 
 ::: notes
 
-Sometimes directly connected to the BCM
+- Obviously modern steering wheels have lots of buttons
+- Gives us a lot of signals to capture
+- Should be simple enough to probe
+- Just a matter of capturing the packets going across the CAN
+- Everything get's sent to the BCM, 
+- or the LIN buss which then bridges onto the CAN bus
 
-Sometimes connected to a LINBUS
 
 :::
 
 # Outputs
+
 ## Instrument Cluster
 
-# Simulator
+- Speedometer, warning lights, odometer
+- Doesn't originate data, just displays data from the bus
+- Trusts the bus completely - no sanity checking on received values
+
+::: notes
+
+- Just outputs data it picks up from the bus.
+- Almost like a dumb terminal in that way.
+- Because it just displays whatever it's told, this would make it a target for any kind of attack
+- A fancy digital dashboard on a new car today might not be as easy to interface though
+
+:::
+
+## Simulator
 
 ![](static/icsim-2.jpg)
 
